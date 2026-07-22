@@ -1,0 +1,57 @@
+[
+  {
+    "id": "cert-01",
+    "code": "MCP-AIS",
+    "title": "Certified Applied AI Safety Practitioner",
+    "level": "Professional",
+    "domain": "Artificial Intelligence",
+    "description": "Validates the ability to evaluate, red-team, and monitor production AI systems for safety-relevant failure modes.",
+    "examDuration": "3 hours",
+    "validity": "3 years",
+    "prerequisites": "2+ years applied ML experience"
+  },
+  {
+    "id": "cert-02",
+    "code": "MCP-SEC",
+    "title": "Certified Security Engineer — Applied Cryptography",
+    "level": "Professional",
+    "domain": "Security & Privacy",
+    "description": "Covers key-management architecture, protocol analysis, and post-quantum migration planning.",
+    "examDuration": "3 hours",
+    "validity": "3 years",
+    "prerequisites": "CompTIA Security+ or equivalent experience"
+  },
+  {
+    "id": "cert-03",
+    "code": "MCP-SRE",
+    "title": "Certified Site Reliability Professional",
+    "level": "Associate",
+    "domain": "Systems & Infrastructure",
+    "description": "Demonstrates competency in incident response, capacity planning, and reliability instrumentation.",
+    "examDuration": "2.5 hours",
+    "validity": "3 years",
+    "prerequisites": "1+ year in an operations or platform role"
+  },
+  {
+    "id": "cert-04",
+    "code": "MCP-A11Y",
+    "title": "Certified Accessibility Engineer",
+    "level": "Associate",
+    "domain": "Human-Computer Interaction",
+    "description": "Validates hands-on ability to audit, remediate, and architect for WCAG-conformant product experiences.",
+    "examDuration": "2 hours",
+    "validity": "3 years",
+    "prerequisites": "None — open enrollment"
+  },
+  {
+    "id": "cert-05",
+    "code": "MCP-GRN",
+    "title": "Certified Sustainable Systems Engineer",
+    "level": "Professional",
+    "domain": "Sustainability",
+    "description": "Covers carbon-aware architecture patterns, embodied-emissions accounting, and hardware lifecycle planning.",
+    "examDuration": "2.5 hours",
+    "validity": "3 years",
+    "prerequisites": "2+ years infrastructure or platform experience"
+  }
+]

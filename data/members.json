@@ -1,0 +1,30 @@
+[
+  {
+    "id": "mem-001",
+    "name": "Jordan Avery",
+    "email": "demo@meridian.org",
+    "password": "meridian2026",
+    "role": "member",
+    "initials": "JA",
+    "title": "Senior Software Engineer",
+    "org": "Northwind Systems",
+    "membershipTier": "Professional",
+    "joinDate": "2021-03-14",
+    "location": "Vancouver, Canada",
+    "communities": ["com-01", "com-03"]
+  },
+  {
+    "id": "mem-002",
+    "name": "Priya Shah",
+    "email": "admin@meridian.org",
+    "password": "meridianadmin",
+    "role": "admin",
+    "initials": "PS",
+    "title": "Platform Administrator",
+    "org": "Meridian Technology Society",
+    "membershipTier": "Staff",
+    "joinDate": "2019-01-08",
+    "location": "Amsterdam, Netherlands",
+    "communities": ["com-01", "com-02", "com-03", "com-04"]
+  }
+]

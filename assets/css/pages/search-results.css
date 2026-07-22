@@ -1,0 +1,24 @@
+/* ==========================================================================
+   Meridian — Search results page
+   ========================================================================== */
+
+.search-page-input-wrap { position: relative; max-width: 640px; margin: 0 auto var(--m-space-xl); }
+.search-page-input-wrap i { position: absolute; left: 1.1rem; top: 50%; transform: translateY(-50%); color: var(--m-text-muted); }
+.search-page-input-wrap input {
+  width: 100%; padding: 1rem 1.2rem 1rem 3rem; border-radius: var(--m-radius-pill); border: 1px solid var(--m-border);
+  background: var(--m-surface); color: var(--m-text); font-size: var(--m-fs-md);
+}
+.search-page-input-wrap input:focus { outline: none; border-color: var(--m-primary); box-shadow: var(--m-focus-ring); }
+
+.search-result-row {
+  display: flex; align-items: center; gap: 1rem; padding: 1.1rem 1.2rem; border: 1px solid var(--m-border);
+  border-radius: var(--m-radius-md); background: var(--m-surface); margin-bottom: 0.7rem;
+}
+.search-result-row:hover { border-color: var(--m-primary); }
+.search-result-row .icon-badge {
+  width: 42px; height: 42px; border-radius: var(--m-radius-md); background: var(--m-violet-100); color: var(--m-primary);
+  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+[data-bs-theme='dark'] .search-result-row .icon-badge { background: rgba(91,95,239,0.18); }
+.search-result-row .title { font-weight: 700; }
+.search-result-row .sub { font-size: var(--m-fs-xs); color: var(--m-text-muted); }

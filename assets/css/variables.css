@@ -1,0 +1,166 @@
+/* ==========================================================================
+   Meridian Design Tokens
+   Brand palette: Primary #0F172A (deep navy ink), Secondary #1E3A8A (royal
+   blue, the interactive/brand accent), Background #F8FAFC (cool off-white),
+   Accent #FBBF24 (amber gold, used sparingly for highlights/ratings/CTAs).
+   ========================================================================== */
+
+:root {
+  /* ---- Neutral scale — anchored on Primary (#0F172A) and Background (#F8FAFC) ---- */
+  --m-ink-950: #020617;
+  --m-ink-900: #0F172A; /* Primary */
+  --m-ink-850: #1A2438;
+  --m-ink-800: #1E293B;
+  --m-ink-700: #334155;
+  --m-ink-600: #475569;
+  --m-ink-500: #64748B;
+  --m-ink-400: #94A3B8;
+  --m-ink-300: #CBD5E1;
+  --m-ink-200: #E2E8F0;
+  --m-ink-100: #F1F5F9;
+  --m-ink-50:  #F8FAFC; /* Background */
+
+  /* ---- Brand blue scale — anchored on Secondary (#1E3A8A) ---- */
+  --m-blue-900: #16296B;
+  --m-blue-800: #1E3A8A; /* Secondary */
+  --m-blue-700: #1E40AF;
+  --m-blue-600: #2563EB;
+  --m-blue-500: #3B82F6;
+  --m-blue-400: #60A5FA;
+  --m-blue-300: #93C5FD;
+  --m-blue-100: #DBEAFE;
+
+  /* ---- Accent gold scale — anchored on Accent (#FBBF24) ---- */
+  --m-gold-600: #B45309;
+  --m-gold-500: #F59E0B;
+  --m-gold-400: #FBBF24; /* Accent */
+  --m-gold-300: #FCD34D;
+  --m-gold-100: #FEF3C7;
+
+  /* ---- Semantic error/danger (not a brand hue — kept distinct on purpose) ---- */
+  --m-rose-500: #E11D48;
+  --m-rose-100: #FFE4E8;
+
+  /* Legacy alias kept so older component CSS referencing "--m-teal-*" (now a
+     neutral slate tint, not teal) still resolves without a mass rename. */
+  --m-teal-600: var(--m-ink-700);
+  --m-teal-500: var(--m-ink-500);
+  --m-teal-400: var(--m-ink-400);
+  --m-teal-100: var(--m-ink-100);
+  --m-amber-500: var(--m-gold-500);
+  --m-amber-400: var(--m-gold-400);
+  --m-amber-100: var(--m-gold-100);
+  --m-violet-100: var(--m-blue-100);
+  --m-violet-300: var(--m-blue-300);
+  --m-violet-400: var(--m-blue-400);
+  --m-violet-700: var(--m-blue-900);
+
+  /* ---- Gradients ---- */
+  --m-gradient-primary: linear-gradient(135deg, var(--m-ink-900) 0%, var(--m-blue-800) 100%);
+  --m-gradient-mesh: radial-gradient(circle at 15% 20%, rgba(30, 58, 138, 0.16), transparent 45%),
+                     radial-gradient(circle at 85% 15%, rgba(251, 191, 36, 0.10), transparent 50%),
+                     radial-gradient(circle at 50% 90%, rgba(15, 23, 42, 0.10), transparent 55%);
+  --m-gradient-text: linear-gradient(90deg, var(--m-blue-800), var(--m-gold-500));
+
+  /* ---- Typography ---- */
+  --m-font-display: 'Sora', 'Segoe UI', system-ui, sans-serif;
+  --m-font-body: 'Inter', 'Segoe UI', system-ui, sans-serif;
+
+  --m-fs-xs: 0.75rem;
+  --m-fs-sm: 0.875rem;
+  --m-fs-base: 1rem;
+  --m-fs-md: 1.125rem;
+  --m-fs-lg: 1.375rem;
+  --m-fs-xl: 1.75rem;
+  --m-fs-2xl: 2.25rem;
+  --m-fs-3xl: 2.875rem;
+  --m-fs-4xl: 3.5rem;
+  --m-fs-5xl: 4.5rem;
+
+  /* ---- Spacing scale ---- */
+  --m-space-3xs: 0.25rem;
+  --m-space-2xs: 0.5rem;
+  --m-space-xs: 0.75rem;
+  --m-space-sm: 1rem;
+  --m-space-md: 1.5rem;
+  --m-space-lg: 2rem;
+  --m-space-xl: 3rem;
+  --m-space-2xl: 4.5rem;
+  --m-space-3xl: 6rem;
+  --m-space-4xl: 8rem;
+
+  /* ---- Radius / shadow / motion ---- */
+  --m-radius-sm: 8px;
+  --m-radius-md: 14px;
+  --m-radius-lg: 22px;
+  --m-radius-pill: 999px;
+
+  --m-shadow-sm: 0 2px 8px rgba(15, 23, 42, 0.08);
+  --m-shadow-md: 0 12px 32px rgba(15, 23, 42, 0.12);
+  --m-shadow-lg: 0 24px 64px rgba(15, 23, 42, 0.18);
+  --m-shadow-glow: 0 0 0 1px rgba(30, 58, 138, 0.22), 0 8px 40px rgba(30, 58, 138, 0.22);
+
+  --m-ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --m-duration-fast: 160ms;
+  --m-duration-base: 280ms;
+  --m-duration-slow: 480ms;
+
+  --m-container: 1280px;
+  --m-header-h: 76px;
+
+  /* ---- Light theme (default) ---- */
+  --m-bg: var(--m-ink-50);
+  --m-bg-alt: #EEF2F7;
+  --m-surface: #ffffff;
+  --m-surface-glass: rgba(255, 255, 255, 0.7);
+  --m-surface-glass-border: rgba(15, 23, 42, 0.08);
+  --m-text: var(--m-ink-900);
+  --m-text-muted: var(--m-ink-500);
+  --m-text-inverse: var(--m-ink-50);
+  --m-border: rgba(15, 23, 42, 0.10);
+  --m-primary: var(--m-blue-800);
+  --m-primary-strong: var(--m-blue-900);
+  --m-accent: var(--m-gold-500);
+  --m-focus-ring: 0 0 0 3px rgba(30, 58, 138, 0.35);
+}
+
+[data-bs-theme='dark'] {
+  --m-bg: var(--m-ink-900);
+  --m-bg-alt: var(--m-ink-950);
+  --m-surface: var(--m-ink-850);
+  --m-surface-glass: rgba(26, 36, 56, 0.65);
+  --m-surface-glass-border: rgba(255, 255, 255, 0.08);
+  --m-text: var(--m-ink-50);
+  --m-text-muted: var(--m-ink-300);
+  --m-text-inverse: var(--m-ink-900);
+  --m-border: rgba(255, 255, 255, 0.10);
+  --m-primary: var(--m-blue-400);
+  --m-primary-strong: var(--m-blue-300);
+  --m-accent: var(--m-gold-400);
+  --m-focus-ring: 0 0 0 3px rgba(96, 165, 250, 0.5);
+}
+
+/* Bootstrap 5.3 CSS-variable overrides — this is the "customization" layer,
+   no Sass rebuild required. */
+:root,
+[data-bs-theme='light'] {
+  --bs-primary: var(--m-blue-800);
+  --bs-primary-rgb: 30, 58, 138;
+  --bs-secondary: var(--m-gold-500);
+  --bs-body-bg: var(--m-bg);
+  --bs-body-color: var(--m-text);
+  --bs-border-color: var(--m-border);
+  --bs-link-color: var(--m-primary);
+  --bs-link-hover-color: var(--m-primary-strong);
+  --bs-body-font-family: var(--m-font-body);
+}
+[data-bs-theme='dark'] {
+  --bs-primary: var(--m-blue-400);
+  --bs-primary-rgb: 96, 165, 250;
+  --bs-secondary: var(--m-gold-400);
+  --bs-body-bg: var(--m-bg);
+  --bs-body-color: var(--m-text);
+  --bs-border-color: var(--m-border);
+  --bs-link-color: var(--m-primary);
+  --bs-link-hover-color: var(--m-primary-strong);
+}

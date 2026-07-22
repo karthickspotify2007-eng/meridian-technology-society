@@ -1,0 +1,50 @@
+[
+  {
+    "id": "news-01",
+    "title": "Meridian Launches Global Certification in Applied AI Safety",
+    "category": "Announcement",
+    "date": "2026-07-10",
+    "summary": "The new credential fills a gap identified by 2,000+ member survey respondents: a rigorous, vendor-neutral standard for AI safety practice.",
+    "featured": true
+  },
+  {
+    "id": "news-02",
+    "title": "Membership Surpasses 480,000 Professionals Across 148 Countries",
+    "category": "Milestone",
+    "date": "2026-06-22",
+    "summary": "A decade of chapter growth in the Global South accounts for most of the past two years' net new membership.",
+    "featured": true
+  },
+  {
+    "id": "news-03",
+    "title": "Meridian Press Publishes Open-Access Archive of 40 Years of Proceedings",
+    "category": "Publications",
+    "date": "2026-06-03",
+    "summary": "Over 210,000 papers are now freely accessible, digitized and OCR-corrected in partnership with three national libraries.",
+    "featured": true
+  },
+  {
+    "id": "news-04",
+    "title": "New Student Chapter Grant Program Opens Applications",
+    "category": "Membership",
+    "date": "2026-05-18",
+    "summary": "Up to $15,000 in seed funding is available for new university chapters in underrepresented regions.",
+    "featured": false
+  },
+  {
+    "id": "news-05",
+    "title": "Meridian Statement on Responsible Disclosure Norms for Foundation Models",
+    "category": "Policy",
+    "date": "2026-04-29",
+    "summary": "A working group of 30 member-researchers publishes shared norms for reporting emergent capabilities and safety-relevant findings.",
+    "featured": false
+  },
+  {
+    "id": "news-06",
+    "title": "GreenCompute Track Added to 2027 Flagship Symposium",
+    "category": "Conferences",
+    "date": "2026-04-02",
+    "summary": "Sustainable systems research gets a dedicated track after three years as the fastest-growing workshop submission category.",
+    "featured": false
+  }
+]

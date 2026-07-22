@@ -1,0 +1,75 @@
+[
+  {
+    "id": "blog-01",
+    "slug": "reading-a-flame-graph-under-pressure",
+    "title": "Reading a Flame Graph Under Pressure",
+    "author": "Dr. Amara Osei",
+    "authorRole": "Distinguished Member, Systems Community",
+    "date": "2026-07-08",
+    "category": "Engineering",
+    "tags": ["performance", "debugging", "on-call"],
+    "readTime": 7,
+    "excerpt": "The three shapes every flame graph reduces to, and the two-minute triage loop that gets you from 'the site is slow' to a root cause before the next page fires.",
+    "content": [
+      "Every incident channel has a moment where someone pastes a screenshot of a flame graph and asks 'what am I looking at?' The honest answer is: almost always one of three shapes.",
+      "The first is a plateau — a single wide frame dominating the graph. That's your answer; whatever function sits under that plateau is where the CPU time actually went. Stop scrolling and go read that function.",
+      "The second is a comb — many thin, evenly-spaced frames of similar width. This usually means you're CPU-bound in a hot loop calling out to many small functions rather than one obvious offender, which points you toward algorithmic complexity, not a single bad call.",
+      "The third is a staircase of async boundaries — frames that don't add up to your total wall-clock time. That gap is where you're waiting, not computing: locks, I/O, or a downstream service. Flame graphs from CPU sampling will under-represent this time, so pair it with a wall-clock or off-CPU profile before you conclude the service is 'fast.'",
+      "The two-minute loop we teach new on-call engineers: capture a profile during the incident, not after. Identify which of the three shapes you have. If it's a plateau, you're done in one hop. If it's a comb or a staircase, that's your cue to switch tools — algorithmic analysis for the comb, distributed tracing for the staircase — rather than staring harder at the same graph."
+    ]
+  },
+  {
+    "id": "blog-02",
+    "slug": "what-calibrated-trust-looks-like-in-clinical-ai",
+    "title": "What Calibrated Trust Looks Like in Clinical AI",
+    "author": "Dr. Sofia Marín",
+    "authorRole": "Research Fellow, Human-Computer Interaction Community",
+    "date": "2026-06-19",
+    "category": "Research",
+    "tags": ["explainability", "healthcare", "trust"],
+    "readTime": 9,
+    "excerpt": "Clinicians don't want more explanation — they want the right explanation at the right moment. Findings from an 18-month study across four hospital systems.",
+    "content": [
+      "When we started this study, our working hypothesis was that clinicians under-trusted AI decision support because the models weren't explainable enough. Eighteen months and four hospital systems later, we found something closer to the opposite problem in half our sites: over-trust, driven by explanations that looked rigorous but didn't actually let a clinician verify anything.",
+      "The pattern that correlated most strongly with well-calibrated trust wasn't explanation depth — it was explanation timing. Interfaces that surfaced a confidence signal before the recommendation, and a full rationale only on request, produced clinicians who caught more model errors than either 'always show everything' or 'show nothing' designs.",
+      "Practically, this means treating explainability as a progressive disclosure problem, not a completeness problem. Ship the smallest signal that lets a domain expert decide whether to dig deeper, and make digging deeper cheap.",
+      "The full dataset and interview protocol are available to Meridian members through the Publications library alongside the peer-reviewed paper."
+    ]
+  },
+  {
+    "id": "blog-03",
+    "slug": "carbon-aware-scheduling-first-90-days",
+    "title": "Carbon-Aware Scheduling: The First 90 Days",
+    "author": "Liang Wu",
+    "authorRole": "Senior Member, Sustainability Community",
+    "date": "2026-05-27",
+    "category": "Sustainability",
+    "tags": ["infrastructure", "sustainability", "scheduling"],
+    "readTime": 6,
+    "excerpt": "Most teams overbuild their first carbon-aware scheduler. Here's the minimal version that shipped in under a sprint and what it actually saved.",
+    "content": [
+      "The version of carbon-aware scheduling that ships in academic papers has forecasting models, multi-region optimization, and SLA-aware rescheduling. The version that ships in 90 days has none of that — and it still captures most of the benefit.",
+      "Our minimal implementation: tag jobs as delay-tolerant or not at submission time, poll a public regional grid-intensity API on a fixed interval, and hold delay-tolerant jobs in a queue when intensity is above a static threshold. No forecasting, no machine learning.",
+      "That version cut embodied emissions for our batch training workloads by roughly 19% with zero missed deadlines, because most of our delay-tolerant jobs had slack measured in hours, not minutes. The lesson: don't let the sophisticated version block you from shipping the naive one.",
+      "We're publishing the full before/after methodology at GreenCompute 2027 — come argue with the numbers in person."
+    ]
+  },
+  {
+    "id": "blog-04",
+    "slug": "accessibility-retrofits-fail-heres-why",
+    "title": "Accessibility Retrofits Fail. Here's Why.",
+    "author": "Dr. Naledi Dlamini",
+    "authorRole": "Chair, Design Systems Working Group",
+    "date": "2026-05-02",
+    "category": "Design",
+    "tags": ["accessibility", "design-systems"],
+    "readTime": 8,
+    "excerpt": "Forty product teams, one recurring root cause: accessibility work stalls when it isn't a property of the token, not the component.",
+    "content": [
+      "Every team we studied had, at some point, run an accessibility audit and fixed the findings. Nearly all of them had regressed within two release cycles. The audits weren't wrong — the fixes just weren't structural.",
+      "Fixing a single button's contrast ratio doesn't fix the next fifty buttons a designer creates from a color picker instead of a token. The teams that held onto their fixes had moved the constraint down a layer: contrast ratios enforced at the design-token level, with tooling that made an inaccessible combination simply unavailable to pick.",
+      "This reframes 'accessibility debt' as a design-system maturity problem, not a QA checklist problem. It also means the fix is often invisible to the people filing the original bug reports, which makes it a hard sell without data — so we built the data.",
+      "The complete design-token audit framework is open-sourced and linked from the paper in this quarter's Magazine issue."
+    ]
+  }
+]

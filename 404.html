@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var t=localStorage.getItem('meridian:theme:v2')||'light';document.documentElement.setAttribute('data-bs-theme',t);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page Not Found | Meridian Technology Society</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#F8FAFC">
+<link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg?v=8">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<link rel="stylesheet" href="/assets/css/variables.css?v=8">
+<link rel="stylesheet" href="/assets/css/base.css?v=8">
+<link rel="stylesheet" href="/assets/css/layout.css?v=8">
+<link rel="stylesheet" href="/assets/css/components/navbar.css?v=8">
+<link rel="stylesheet" href="/assets/css/components/footer.css?v=8">
+<link rel="stylesheet" href="/assets/css/components/button.css?v=8">
+<link rel="stylesheet" href="/assets/css/components/toast.css?v=8">
+<link rel="stylesheet" href="/assets/css/components/search.css?v=8">
+</head>
+<body>
+<div id="page-loader"><div class="loader-mark" aria-hidden="true"></div></div>
+<div data-partial="header"></div>
+
+<main id="main-content">
+  <section class="section" style="min-height:70vh;display:flex;align-items:center;padding-top:calc(var(--m-header-h) + var(--m-space-2xl));">
+    <div class="container-m" style="text-align:center;">
+      <span class="text-gradient" style="font-family:var(--m-font-display);font-size:6rem;font-weight:800;">404</span>
+      <h1>We couldn't find that page</h1>
+      <p class="lead" style="margin-inline:auto;">The page may have moved, or the link might be out of date. Try searching, or head back to the homepage.</p>
+      <div style="display:flex;gap:0.8rem;justify-content:center;flex-wrap:wrap;margin-top:var(--m-space-lg);">
+        <a href="/index.html" class="btn-m btn-m-primary btn-m-lg">Back to Home</a>
+        <button type="button" class="btn-m btn-m-secondary btn-m-lg" id="notfound-search-btn"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i> Search Meridian</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div data-partial="footer"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+<script src="/assets/js/core/partials.js?v=8" defer></script>
+<script src="/assets/js/core/theme.js?v=8" defer></script>
+<script src="/assets/js/core/data.js?v=8" defer></script>
+<script src="/assets/js/core/state.js?v=8" defer></script>
+<script src="/assets/js/core/a11y.js?v=8" defer></script>
+<script src="/assets/js/core/auth.js?v=8" defer></script>
+<script src="/assets/js/components/Navbar.js?v=8" defer></script>
+<script src="/assets/js/components/Toast.js?v=8" defer></script>
+<script src="/assets/js/components/Notifications.js?v=8" defer></script>
+<script src="/assets/js/components/SearchModal.js?v=8" defer></script>
+<script>
+  document.addEventListener('click', function (e) {
+    if (e.target.closest('#notfound-search-btn')) window.Meridian.search.open();
+  });
+</script>
+</body>
+</html>

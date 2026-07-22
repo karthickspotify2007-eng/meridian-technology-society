@@ -1,0 +1,80 @@
+[
+  {
+    "id": "crs-01",
+    "title": "Foundations of Distributed Systems",
+    "level": "Intermediate",
+    "category": "Systems & Infrastructure",
+    "duration": "6 weeks",
+    "format": "Self-paced",
+    "rating": 4.8,
+    "students": 18400,
+    "instructor": "Dr. Amara Osei",
+    "price": "Free for members",
+    "description": "Consensus, replication, and failure models — the theory you need before you can reason about real distributed outages."
+  },
+  {
+    "id": "crs-02",
+    "title": "Applied Post-Quantum Cryptography",
+    "level": "Advanced",
+    "category": "Security & Privacy",
+    "duration": "4 weeks",
+    "format": "Instructor-led",
+    "rating": 4.9,
+    "students": 6200,
+    "instructor": "Dr. Helena Novak",
+    "price": "$249",
+    "description": "Hands-on migration labs covering lattice-based key exchange and signature schemes for production systems."
+  },
+  {
+    "id": "crs-03",
+    "title": "Explainable AI for Product Teams",
+    "level": "Beginner",
+    "category": "Artificial Intelligence",
+    "duration": "3 weeks",
+    "format": "Self-paced",
+    "rating": 4.6,
+    "students": 24100,
+    "instructor": "Dr. Sofia Marín",
+    "price": "Free for members",
+    "description": "A practical, non-mathematical introduction to designing trustworthy AI-assisted product experiences."
+  },
+  {
+    "id": "crs-04",
+    "title": "Carbon-Aware Infrastructure Engineering",
+    "level": "Intermediate",
+    "category": "Sustainability",
+    "duration": "5 weeks",
+    "format": "Instructor-led",
+    "rating": 4.7,
+    "students": 4100,
+    "instructor": "Liang Wu",
+    "price": "$199",
+    "description": "Design and ship a carbon-aware scheduler for real workloads, from a static-threshold MVP to forecast-driven scheduling."
+  },
+  {
+    "id": "crs-05",
+    "title": "Accessibility Engineering: From Audit to Architecture",
+    "level": "Intermediate",
+    "category": "Human-Computer Interaction",
+    "duration": "4 weeks",
+    "format": "Self-paced",
+    "rating": 4.9,
+    "students": 11700,
+    "instructor": "Dr. Naledi Dlamini",
+    "price": "Free for members",
+    "description": "Move accessibility work from a QA checklist into your design tokens, components, and CI pipeline."
+  },
+  {
+    "id": "crs-06",
+    "title": "Site Reliability Engineering in Practice",
+    "level": "Advanced",
+    "category": "Systems & Infrastructure",
+    "duration": "8 weeks",
+    "format": "Instructor-led",
+    "rating": 4.8,
+    "students": 9300,
+    "instructor": "Marcus Bellweather",
+    "price": "$299",
+    "description": "Error budgets, blameless postmortems, and the operational rituals that turn reliability into a shared discipline."
+  }
+]

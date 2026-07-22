@@ -1,0 +1,179 @@
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<header class="m-header" id="site-header-el" data-component="header">
+  <div class="m-header-bar">
+    <div class="container-m m-header-inner">
+      <a href="/index.html" class="m-brand" aria-label="Meridian Technology Society — home">
+        <img src="logo.jpeg"
+     alt="Logo"
+     style="width:120px; height:120px; object-fit:contain;">
+        
+        <span class="m-brand-divider" aria-hidden="true"></span>
+        
+      </a>
+
+      <nav class="m-nav" id="primary-nav" aria-label="Primary">
+        <ul class="m-nav-list">
+          <li><a href="/index.html">Home</a></li>
+
+          <li class="has-menu">
+            <button type="button" class="m-nav-trigger" aria-expanded="false" aria-controls="menu-about">About <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
+            <div class="m-dropdown" id="menu-about" role="menu">
+              <a role="menuitem" href="/pages/about.html#mission">Our Mission</a>
+              <a role="menuitem" href="/pages/about.html#leadership">Leadership &amp; Board</a>
+              <a role="menuitem" href="/pages/about.html#history">History &amp; Milestones</a>
+              <a role="menuitem" href="/pages/about.html#governance">Governance</a>
+            </div>
+          </li>
+
+          <li class="has-menu">
+            <button type="button" class="m-nav-trigger" aria-expanded="false" aria-controls="menu-membership">Membership <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
+            <div class="m-dropdown" id="menu-membership" role="menu">
+              <a role="menuitem" href="/pages/membership.html#why-join">Why Join Meridian</a>
+              <a role="menuitem" href="/pages/membership.html#tiers">Tiers &amp; Pricing</a>
+              <a role="menuitem" href="/pages/membership.html#student">Student Membership</a>
+              <a role="menuitem" href="/pages/communities.html">Technical Communities</a>
+            </div>
+          </li>
+
+          <li class="has-menu m-has-mega">
+            <button type="button" class="m-nav-trigger" aria-expanded="false" aria-controls="menu-explore">Explore <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
+            <div class="m-mega" id="menu-explore" role="menu">
+              <div class="m-mega-col">
+                <p class="m-mega-heading"><i class="fa-solid fa-book-open" aria-hidden="true"></i> Publications</p>
+                <a role="menuitem" href="/pages/publications.html">Publications Library</a>
+                <a role="menuitem" href="/pages/publications.html?type=Journal">Journals</a>
+                <a role="menuitem" href="/pages/publications.html?type=Magazine">Magazines</a>
+              </div>
+              <div class="m-mega-col">
+                <p class="m-mega-heading"><i class="fa-solid fa-calendar-days" aria-hidden="true"></i> Conferences &amp; Events</p>
+                <a role="menuitem" href="/pages/conferences.html">All Conferences</a>
+                <a role="menuitem" href="/pages/events.html">Upcoming Events</a>
+                <a role="menuitem" href="/pages/conferences.html?status=past">Past Proceedings</a>
+              </div>
+              <div class="m-mega-col">
+                <p class="m-mega-heading"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i> Learning</p>
+                <a role="menuitem" href="/pages/learning.html">Learning Hub</a>
+                <a role="menuitem" href="/pages/certifications.html">Certifications</a>
+                <a role="menuitem" href="/pages/certifications.html#verify">Verify a Certificate</a>
+              </div>
+              <div class="m-mega-col">
+                <p class="m-mega-heading"><i class="fa-solid fa-folder-open" aria-hidden="true"></i> Resources</p>
+                <a role="menuitem" href="/pages/resources.html">Downloads Library</a>
+                <a role="menuitem" href="/pages/news.html">Newsroom</a>
+                <a role="menuitem" href="/pages/blog.html">Blog</a>
+              </div>
+            </div>
+          </li>
+
+          <li><a href="/pages/careers.html">Careers</a></li>
+          <li><a href="/pages/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="m-header-actions">
+        <button type="button" class="m-icon-btn" id="search-trigger" aria-haspopup="dialog" aria-controls="search-modal" title="Search (Ctrl+K)">
+          <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+          <span class="visually-hidden-focusable">Search</span>
+        </button>
+        <button type="button" class="m-icon-btn" id="theme-toggle" aria-pressed="false" title="Toggle dark mode">
+          <i class="fa-solid fa-moon" aria-hidden="true" data-theme-icon="dark"></i>
+          <i class="fa-solid fa-sun" aria-hidden="true" data-theme-icon="light" hidden></i>
+          <span class="visually-hidden-focusable">Toggle theme</span>
+        </button>
+
+        <div class="m-auth-zone" data-auth-zone>
+          <div class="m-guest-actions" data-guest-only>
+            <a href="/auth/login.html" class="btn-m btn-m-ghost">Log in</a>
+            <a href="/auth/register.html" class="btn-m btn-m-primary">Join Meridian</a>
+          </div>
+
+          <div class="m-member-actions" data-member-only hidden>
+            <button type="button" class="m-icon-btn" id="notif-trigger" aria-haspopup="true" aria-expanded="false" title="Notifications">
+              <i class="fa-solid fa-bell" aria-hidden="true"></i>
+              <span class="m-notif-badge" id="notif-badge" hidden>0</span>
+              <span class="visually-hidden-focusable">Notifications</span>
+            </button>
+            <div class="m-notif-panel" id="notif-panel" role="menu" hidden>
+              <div class="m-notif-panel-head">
+                <span>Notifications</span>
+                <button type="button" class="m-link-btn" id="notif-mark-all">Mark all read</button>
+              </div>
+              <div class="m-notif-list" id="notif-list"></div>
+              <a href="/dashboard.html#notifications" class="m-notif-viewall">View all in Dashboard</a>
+            </div>
+
+            <button type="button" class="m-avatar-btn" id="avatar-trigger" aria-haspopup="true" aria-expanded="false">
+              <span class="m-avatar" id="avatar-initials">--</span>
+            </button>
+            <div class="m-dropdown m-avatar-menu" id="avatar-menu" role="menu">
+              <div class="m-avatar-menu-head">
+                <strong id="avatar-name">Member</strong>
+                <span id="avatar-email" class="text-muted-m"></span>
+              </div>
+              <a role="menuitem" href="/dashboard.html"><i class="fa-solid fa-gauge" aria-hidden="true"></i> Dashboard</a>
+              <a role="menuitem" href="/dashboard.html#profile"><i class="fa-solid fa-user" aria-hidden="true"></i> Profile</a>
+              <a role="menuitem" href="/admin.html" id="admin-menu-link" hidden><i class="fa-solid fa-shield-halved" aria-hidden="true"></i> Admin CMS</a>
+              <button role="menuitem" type="button" id="logout-btn"><i class="fa-solid fa-right-from-bracket" aria-hidden="true"></i> Log out</button>
+            </div>
+          </div>
+        </div>
+
+        <button type="button" class="m-icon-btn m-mobile-toggle" id="mobile-menu-toggle" aria-expanded="false" aria-controls="mobile-menu" title="Menu">
+          <i class="fa-solid fa-bars" aria-hidden="true"></i>
+          <span class="visually-hidden-focusable">Open menu</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="m-mobile-menu" id="mobile-menu" aria-hidden="true">
+  <div class="m-mobile-menu-inner">
+    <div class="m-mobile-menu-head">
+      <span class="m-brand-word">Meridian</span>
+      <button type="button" class="m-icon-btn" id="mobile-menu-close" title="Close menu"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+    </div>
+    <nav aria-label="Mobile">
+      <details open><summary>Home</summary></details>
+      <details>
+        <summary>About</summary>
+        <a href="/pages/about.html#mission">Our Mission</a>
+        <a href="/pages/about.html#leadership">Leadership &amp; Board</a>
+        <a href="/pages/about.html#history">History &amp; Milestones</a>
+        <a href="/pages/about.html#governance">Governance</a>
+      </details>
+      <details>
+        <summary>Membership</summary>
+        <a href="/pages/membership.html#why-join">Why Join Meridian</a>
+        <a href="/pages/membership.html#tiers">Tiers &amp; Pricing</a>
+        <a href="/pages/communities.html">Technical Communities</a>
+      </details>
+      <details>
+        <summary>Explore</summary>
+        <a href="/pages/publications.html">Publications</a>
+        <a href="/pages/conferences.html">Conferences</a>
+        <a href="/pages/events.html">Events</a>
+        <a href="/pages/learning.html">Learning Hub</a>
+        <a href="/pages/certifications.html">Certifications</a>
+        <a href="/pages/resources.html">Resources</a>
+        <a href="/pages/news.html">Newsroom</a>
+        <a href="/pages/blog.html">Blog</a>
+      </details>
+      <details>
+        <summary>More</summary>
+        <a href="/pages/careers.html">Careers</a>
+        <a href="/pages/contact.html">Contact</a>
+      </details>
+    </nav>
+    <div class="m-mobile-menu-foot" data-guest-only>
+      <a href="/auth/login.html" class="btn-m btn-m-ghost btn-m-block">Log in</a>
+      <a href="/auth/register.html" class="btn-m btn-m-primary btn-m-block">Join Meridian</a>
+    </div>
+    <div class="m-mobile-menu-foot" data-member-only hidden>
+      <a href="/dashboard.html" class="btn-m btn-m-ghost btn-m-block">Dashboard</a>
+      <button type="button" class="btn-m btn-m-primary btn-m-block" id="mobile-logout-btn">Log out</button>
+    </div>
+  </div>
+</div>
+<div class="m-mobile-menu-backdrop" id="mobile-menu-backdrop" hidden></div>

@@ -1,0 +1,41 @@
+/* ==========================================================================
+   Meridian — Hero (Home)
+   ========================================================================== */
+
+.hero-m {
+  position: relative; isolation: isolate; overflow: hidden;
+  padding-block: calc(var(--m-header-h) + var(--m-space-3xl)) var(--m-space-3xl);
+  background: var(--m-bg);
+}
+.hero-m::before {
+  content: ''; position: absolute; inset: 0; z-index: -2; background: var(--m-gradient-mesh);
+}
+.hero-m-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: var(--m-space-2xl); align-items: center; position: relative; z-index: 1; }
+.hero-m-eyebrow {
+  display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.4rem 0.9rem; border-radius: var(--m-radius-pill);
+  background: var(--m-surface-glass); border: 1px solid var(--m-surface-glass-border); font-size: var(--m-fs-xs); font-weight: 700;
+  margin-bottom: var(--m-space-md); backdrop-filter: blur(10px);
+}
+.hero-m-eyebrow .status-dot { margin-right: 0; }
+.hero-m h1 { margin-bottom: var(--m-space-md); }
+.hero-m .lead { font-size: var(--m-fs-md); max-width: 560px; margin-bottom: var(--m-space-lg); }
+.hero-m-cta-row { display: flex; gap: 0.8rem; flex-wrap: wrap; margin-bottom: var(--m-space-xl); }
+.hero-m-trustbar { display: flex; flex-wrap: wrap; gap: var(--m-space-lg); align-items: center; }
+.hero-m-trustbar .stat-item { text-align: left; }
+.hero-m-trustbar .stat-item .stat-number { font-size: var(--m-fs-xl); }
+
+.hero-m-visual { position: relative; aspect-ratio: 1 / 1; max-width: 520px; margin-inline: auto; will-change: transform; }
+.hero-m-visual .glass { position: absolute; padding: var(--m-space-md); width: 210px; box-shadow: var(--m-shadow-md); }
+.hero-m-visual .card-a { top: 4%; left: 0; }
+.hero-m-visual .card-b { bottom: 8%; right: 0; }
+.hero-m-visual .card-c { top: 42%; left: 20%; width: 190px; }
+.hero-m-visual canvas { border-radius: var(--m-radius-lg); }
+
+@media (max-width: 992px) {
+  .hero-m-grid { grid-template-columns: 1fr; }
+  .hero-m-visual { max-width: 380px; }
+}
+@media (max-width: 560px) {
+  .hero-m-visual .glass { position: static; width: 100%; margin-bottom: 0.6rem; }
+  .hero-m-visual { display: flex; flex-direction: column; }
+}

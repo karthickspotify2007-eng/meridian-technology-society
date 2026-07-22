@@ -1,0 +1,28 @@
+/* ==========================================================================
+   Meridian — Home page specific layout
+   ========================================================================== */
+
+#publications-swiper .swiper-slide,
+#testimonials-swiper .swiper-slide { height: auto; padding: 4px; }
+#publications-swiper .swiper-slide { width: 340px; }
+#testimonials-swiper .swiper-slide { width: min(480px, 84vw); }
+
+.testimonial-card {
+  background: var(--m-surface); border: 1px solid var(--m-border); border-radius: var(--m-radius-lg);
+  padding: var(--m-space-lg); height: 100%;
+}
+.testimonial-card .stars { color: var(--m-amber-500); margin-bottom: 0.6rem; }
+.testimonial-card p.quote { font-size: var(--m-fs-md); color: var(--m-text); margin-bottom: var(--m-space-md); }
+.testimonial-card .who { display: flex; align-items: center; gap: 0.7rem; }
+.testimonial-card .who .m-avatar { background: var(--m-gradient-primary); }
+.testimonial-card .who strong { display: block; font-size: var(--m-fs-sm); }
+.testimonial-card .who span { font-size: var(--m-fs-xs); color: var(--m-text-muted); }
+
+#partners-swiper { padding-block: 0.5rem; }
+#partners-swiper .swiper-wrapper { transition-timing-function: linear !important; }
+#partners-swiper .swiper-slide { width: auto; display: flex; align-items: center; }
+.partner-pill {
+  padding: 0.6rem 1.4rem; border: 1px solid var(--m-border); border-radius: var(--m-radius-pill);
+  font-family: var(--m-font-display); font-weight: 700; color: var(--m-text-muted); background: var(--m-surface);
+  white-space: nowrap;
+}

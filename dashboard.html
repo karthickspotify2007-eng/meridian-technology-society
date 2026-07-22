@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var t=localStorage.getItem('meridian:theme:v2')||'light';document.documentElement.setAttribute('data-bs-theme',t);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard | Meridian Technology Society</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#F8FAFC">
+<link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg?v=8">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<link rel="stylesheet" href="/assets/css/variables.css?v=8">
+<link rel="stylesheet" href="/assets/css/base.css?v=8">
+<link rel="stylesheet" href="/assets/css/layout.css?v=8">
+<link rel="stylesheet" href="/assets/css/components/navbar.css?v=8">
+<link rel="stylesheet" href="/assets/css/components/footer.css?v=8">
+<link rel="stylesheet" href="/assets/css/components/button.css?v=8">
+<link rel="stylesheet" href="/assets/css/components/card.css?v=8">
+<link rel="stylesheet" href="/assets/css/components/badge.css?v=8">
+<link rel="stylesheet" href="/assets/css/components/modal.css?v=8">
+<link rel="stylesheet" href="/assets/css/components/form.css?v=8">
+<link rel="stylesheet" href="/assets/css/components/toast.css?v=8">
+<link rel="stylesheet" href="/assets/css/components/search.css?v=8">
+<link rel="stylesheet" href="/assets/css/components/sidebar.css?v=8">
+<link rel="stylesheet" href="/assets/css/pages/dashboard.css?v=8">
+</head>
+<body>
+<div id="page-loader"><div class="loader-mark" aria-hidden="true"></div></div>
+<div data-partial="header"></div>
+
+<div class="app-shell">
+  <aside class="app-sidebar" id="dashboard-sidebar">
+    <div class="app-sidebar-profile">
+      <span class="m-avatar" id="sidebar-avatar">--</span>
+      <div>
+        <strong id="sidebar-name">Member</strong>
+        <span id="sidebar-tier">—</span>
+      </div>
+    </div>
+    <nav class="app-sidebar-nav" aria-label="Dashboard sections">
+      <a href="#profile" data-section-link><i class="fa-solid fa-user" aria-hidden="true"></i> Profile</a>
+      <a href="#courses" data-section-link><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i> Courses</a>
+      <a href="#certificates" data-section-link><i class="fa-solid fa-certificate" aria-hidden="true"></i> Certificates</a>
+      <a href="#events" data-section-link><i class="fa-solid fa-calendar-check" aria-hidden="true"></i> Events</a>
+      <a href="#saved" data-section-link><i class="fa-solid fa-heart" aria-hidden="true"></i> Saved Items</a>
+      <a href="#notifications" data-section-link><i class="fa-solid fa-bell" aria-hidden="true"></i> Notifications</a>
+      <a href="#settings" data-section-link><i class="fa-solid fa-gear" aria-hidden="true"></i> Settings</a>
+      <span class="sidebar-group-label">More</span>
+      <a href="/index.html"><i class="fa-solid fa-house" aria-hidden="true"></i> Back to site</a>
+    </nav>
+  </aside>
+
+  <main class="app-main" id="main-content">
+    <div class="app-topbar">
+      <h1 id="dashboard-section-title">Profile</h1>
+      <button type="button" class="btn-m btn-m-secondary app-sidebar-mobile-toggle" id="dashboard-sidebar-toggle"><i class="fa-solid fa-bars" aria-hidden="true"></i> Menu</button>
+    </div>
+
+    <div class="app-section" data-section="profile" id="profile-section"></div>
+    <div class="app-section" data-section="courses" id="courses-section"></div>
+    <div class="app-section" data-section="certificates" id="certificates-section"></div>
+    <div class="app-section" data-section="events" id="events-section"></div>
+    <div class="app-section" data-section="saved" id="saved-section"></div>
+    <div class="app-section" data-section="notifications" id="notifications-section"></div>
+    <div class="app-section" data-section="settings" id="settings-section"></div>
+  </main>
+</div>
+
+<div class="m-toast-region" id="toast-region" aria-live="polite" aria-atomic="true"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+
+<script src="/assets/js/core/partials.js?v=8" defer></script>
+<script src="/assets/js/core/theme.js?v=8" defer></script>
+<script src="/assets/js/core/data.js?v=8" defer></script>
+<script src="/assets/js/core/state.js?v=8" defer></script>
+<script src="/assets/js/core/a11y.js?v=8" defer></script>
+<script src="/assets/js/core/auth.js?v=8" defer></script>
+<script src="/assets/js/core/router.js?v=8" defer></script>
+
+<script src="/assets/js/components/Navbar.js?v=8" defer></script>
+<script src="/assets/js/components/Toast.js?v=8" defer></script>
+<script src="/assets/js/components/Modal.js?v=8" defer></script>
+<script src="/assets/js/components/Tilt.js?v=8" defer></script>
+<script src="/assets/js/components/Bookmark.js?v=8" defer></script>
+<script src="/assets/js/components/Notifications.js?v=8" defer></script>
+<script src="/assets/js/components/ShareButton.js?v=8" defer></script>
+<script src="/assets/js/components/SearchModal.js?v=8" defer></script>
+<script src="/assets/js/components/Card.js?v=8" defer></script>
+<script src="/assets/js/components/DetailModal.js?v=8" defer></script>
+
+<script src="/assets/js/pages/dashboard.js?v=8" defer></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var toggle = document.getElementById('dashboard-sidebar-toggle');
+    var sidebar = document.getElementById('dashboard-sidebar');
+    if (toggle && sidebar) toggle.addEventListener('click', function () { sidebar.classList.toggle('is-open'); });
+  });
+</script>
+</body>
+</html>

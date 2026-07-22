@@ -1,0 +1,34 @@
+[
+  {
+    "id": "test-01",
+    "name": "Dr. Kwame Asante",
+    "role": "Principal Engineer",
+    "org": "Solara Health",
+    "initials": "KA",
+    "quote": "Meridian's certification track is the first one I've seen that tests judgment under ambiguity, not just recall. It changed how we screen senior candidates."
+  },
+  {
+    "id": "test-02",
+    "name": "Yuki Tanaka",
+    "role": "Engineering Director",
+    "org": "Haruko Robotics",
+    "initials": "YT",
+    "quote": "The regional chapter network is the real value — I found my current co-founder at a Tokyo chapter meetup two years ago."
+  },
+  {
+    "id": "test-03",
+    "name": "Elena Petrova",
+    "role": "Staff Security Engineer",
+    "org": "Vantor Bank",
+    "initials": "EP",
+    "quote": "We used the post-quantum migration playbook almost verbatim for our own rollout plan. Saved us at least two quarters of research."
+  },
+  {
+    "id": "test-04",
+    "name": "Michael Obi",
+    "role": "CTO",
+    "org": "Fenwick Labs",
+    "initials": "MO",
+    "quote": "The Learning Hub courses are the rare kind that a busy engineer actually finishes. Short, dense, and immediately applicable."
+  }
+]

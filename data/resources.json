@@ -1,0 +1,56 @@
+[
+  {
+    "id": "res-01",
+    "title": "Post-Quantum Migration Readiness Checklist",
+    "type": "Checklist",
+    "topic": "Security & Privacy",
+    "format": "PDF",
+    "pages": 12,
+    "description": "A one-page-per-phase checklist distilled from the full migration playbook, built for planning conversations with engineering leadership."
+  },
+  {
+    "id": "res-02",
+    "title": "Carbon-Aware Scheduling Reference Architecture",
+    "type": "Template",
+    "topic": "Sustainability",
+    "format": "PDF + diagrams",
+    "pages": 18,
+    "description": "Reference architecture diagrams and a starter policy config for a minimal carbon-aware job scheduler."
+  },
+  {
+    "id": "res-03",
+    "title": "Accessible Design Token Starter Kit",
+    "type": "Template",
+    "topic": "Human-Computer Interaction",
+    "format": "Design tokens (JSON)",
+    "pages": 0,
+    "description": "A WCAG AA-conformant color, spacing, and typography token set ready to import into any design system."
+  },
+  {
+    "id": "res-04",
+    "title": "AI System Evaluation Framework — Whitepaper",
+    "type": "Whitepaper",
+    "topic": "Artificial Intelligence",
+    "format": "PDF",
+    "pages": 34,
+    "description": "A vendor-neutral framework for evaluating production ML systems against safety, robustness, and fairness criteria."
+  },
+  {
+    "id": "res-05",
+    "title": "Incident Postmortem Template",
+    "type": "Template",
+    "topic": "Systems & Infrastructure",
+    "format": "Markdown",
+    "pages": 0,
+    "description": "The blameless-postmortem template used internally across Meridian's own infrastructure working group."
+  },
+  {
+    "id": "res-06",
+    "title": "Chapter Growth Playbook for Student Chapters",
+    "type": "Guide",
+    "topic": "Membership",
+    "format": "PDF",
+    "pages": 22,
+    "description": "Step-by-step guidance for launching and growing a university student chapter, including the grant application template."
+  }
+]

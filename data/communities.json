@@ -1,0 +1,66 @@
+[
+  {
+    "id": "com-01",
+    "name": "Artificial Intelligence",
+    "icon": "fa-brain",
+    "memberCount": 96400,
+    "description": "From foundation-model evaluation to applied ML systems — research, standards, and practitioner exchange.",
+    "topics": ["Machine Learning", "AI Safety", "Model Evaluation", "MLOps"]
+  },
+  {
+    "id": "com-02",
+    "name": "Security & Privacy",
+    "icon": "fa-shield-halved",
+    "memberCount": 71200,
+    "description": "Applied cryptography, threat research, and privacy-engineering practice across industry and academia.",
+    "topics": ["Applied Crypto", "Post-Quantum", "Privacy Engineering", "Threat Research"]
+  },
+  {
+    "id": "com-03",
+    "name": "Systems & Infrastructure",
+    "icon": "fa-server",
+    "memberCount": 84300,
+    "description": "Distributed systems, cloud platforms, and the operational discipline that keeps them reliable at scale.",
+    "topics": ["Distributed Systems", "SRE", "Cloud Platforms", "Networking"]
+  },
+  {
+    "id": "com-04",
+    "name": "Human-Computer Interaction",
+    "icon": "fa-hand-pointer",
+    "memberCount": 42900,
+    "description": "Design research, accessibility, and the craft of building technology people can actually trust and use.",
+    "topics": ["Accessibility", "UX Research", "Design Systems", "Trust & Safety"]
+  },
+  {
+    "id": "com-05",
+    "name": "Sustainability",
+    "icon": "fa-leaf",
+    "memberCount": 28700,
+    "description": "Carbon-aware computing, circular hardware, and the energy economics of modern infrastructure.",
+    "topics": ["Carbon-Aware Compute", "Circular Hardware", "Energy Systems"]
+  },
+  {
+    "id": "com-06",
+    "name": "Robotics & Autonomy",
+    "icon": "fa-robot",
+    "memberCount": 33500,
+    "description": "Perception, control, and safety validation for robots and autonomous systems operating in the physical world.",
+    "topics": ["Perception", "Control Systems", "Safety Validation", "Autonomy"]
+  },
+  {
+    "id": "com-07",
+    "name": "Data & Governance",
+    "icon": "fa-scale-balanced",
+    "memberCount": 25100,
+    "description": "Data ethics, algorithmic accountability, and the governance frameworks shaping how technology is regulated.",
+    "topics": ["Data Ethics", "Policy", "Algorithmic Accountability"]
+  },
+  {
+    "id": "com-08",
+    "name": "Student & Early Career",
+    "icon": "fa-graduation-cap",
+    "memberCount": 61800,
+    "description": "Mentorship, hackathons, and career-launch programming for students and early-career professionals.",
+    "topics": ["Mentorship", "Hackathons", "Career Development"]
+  }
+]

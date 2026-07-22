@@ -1,0 +1,6 @@
+[
+  { "id": "stat-members", "label": "Members worldwide", "value": 483000, "suffix": "+", "icon": "fa-users" },
+  { "id": "stat-countries", "label": "Countries & regions", "value": 148, "suffix": "", "icon": "fa-earth-americas" },
+  { "id": "stat-publications", "label": "Papers in the library", "value": 214000, "suffix": "+", "icon": "fa-book" },
+  { "id": "stat-events", "label": "Events run per year", "value": 640, "suffix": "+", "icon": "fa-calendar-check" }
+]

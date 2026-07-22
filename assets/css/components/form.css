@@ -1,0 +1,43 @@
+/* ==========================================================================
+   Meridian — Forms
+   ========================================================================== */
+
+.form-m-group { margin-bottom: var(--m-space-md); }
+.form-m-group label {
+  display: block; margin-bottom: 0.4rem; font-weight: 600; font-size: var(--m-fs-sm); color: var(--m-text);
+}
+.form-m-group .hint { font-size: var(--m-fs-xs); color: var(--m-text-muted); margin-top: 0.3rem; }
+.form-m-group .error-msg { font-size: var(--m-fs-xs); color: var(--m-rose-500); margin-top: 0.3rem; display: none; align-items: center; gap: 0.3rem; }
+.form-m-group.has-error .error-msg { display: flex; }
+.form-m-group.has-error input,
+.form-m-group.has-error select,
+.form-m-group.has-error textarea { border-color: var(--m-rose-500); }
+
+.form-control-m,
+.form-m-group input[type],
+.form-m-group select,
+.form-m-group textarea {
+  width: 100%; padding: 0.75rem 0.95rem; border-radius: var(--m-radius-sm); border: 1px solid var(--m-border);
+  background: var(--m-surface); color: var(--m-text); font-family: var(--m-font-body); font-size: var(--m-fs-base);
+  transition: border-color var(--m-duration-fast) var(--m-ease), box-shadow var(--m-duration-fast) var(--m-ease);
+}
+.form-control-m:focus,
+.form-m-group input:focus,
+.form-m-group select:focus,
+.form-m-group textarea:focus { outline: none; border-color: var(--m-primary); box-shadow: var(--m-focus-ring); }
+.form-m-group textarea { resize: vertical; min-height: 120px; }
+
+.form-m-row { display: grid; gap: var(--m-space-md); grid-template-columns: 1fr 1fr; }
+@media (max-width: 640px) { .form-m-row { grid-template-columns: 1fr; } }
+
+.form-m-check { display: flex; align-items: flex-start; gap: 0.6rem; font-size: var(--m-fs-sm); color: var(--m-text-muted); }
+.form-m-check input { width: 18px; height: 18px; margin-top: 0.15rem; accent-color: var(--m-primary); }
+
+.form-m-select-wrap { position: relative; }
+.form-m-select-wrap::after {
+  content: '\f078'; font-family: 'Font Awesome 6 Free'; font-weight: 900; position: absolute; right: 1rem; top: 50%;
+  transform: translateY(-50%); pointer-events: none; font-size: 0.7rem; color: var(--m-text-muted);
+}
+.form-m-select-wrap select { appearance: none; -webkit-appearance: none; padding-right: 2.2rem; }
+
+.form-m-card { background: var(--m-surface); border: 1px solid var(--m-border); border-radius: var(--m-radius-lg); padding: var(--m-space-xl); }

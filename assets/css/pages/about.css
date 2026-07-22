@@ -1,0 +1,18 @@
+/* ==========================================================================
+   Meridian — About page (timeline, leadership grid)
+   ========================================================================== */
+
+.timeline-m { position: relative; margin-left: 1rem; padding-left: 2rem; border-left: 2px solid var(--m-border); }
+.timeline-item { position: relative; padding-bottom: var(--m-space-xl); }
+.timeline-item:last-child { padding-bottom: 0; }
+.timeline-item::before {
+  content: ''; position: absolute; left: -2.45rem; top: 0.2rem; width: 14px; height: 14px; border-radius: 50%;
+  background: var(--m-gradient-primary); box-shadow: 0 0 0 4px var(--m-bg);
+}
+.timeline-year { font-family: var(--m-font-display); font-weight: 700; color: var(--m-primary); font-size: var(--m-fs-lg); }
+.timeline-item h3 { margin: 0.2rem 0 0.4rem; }
+
+.leader-card { text-align: center; }
+.leader-card .m-avatar { width: 68px; height: 68px; font-size: var(--m-fs-lg); margin-inline: auto; }
+.leader-card h3 { margin: var(--m-space-sm) 0 0.2rem; }
+.leader-card .role { color: var(--m-primary); font-weight: 600; font-size: var(--m-fs-sm); margin-bottom: 0.4rem; }

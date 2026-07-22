@@ -1,0 +1,57 @@
+[
+  {
+    "id": "job-01",
+    "title": "Senior Research Program Manager, AI Safety",
+    "company": "Meridian Technology Society",
+    "location": "Amsterdam, NL (Hybrid)",
+    "type": "Full-time",
+    "department": "Research Programs",
+    "postedDate": "2026-07-01",
+    "description": "Lead the working groups defining evaluation standards for the Applied AI Safety certification track.",
+    "requirements": ["5+ years research program management", "Familiarity with ML evaluation methods", "Experience running standards working groups"]
+  },
+  {
+    "id": "job-02",
+    "title": "Community Manager, Asia-Pacific Chapters",
+    "company": "Meridian Technology Society",
+    "location": "Singapore (Remote-friendly)",
+    "type": "Full-time",
+    "department": "Global Communities",
+    "postedDate": "2026-06-24",
+    "description": "Grow and support Meridian's fastest-expanding regional chapter network across 14 countries.",
+    "requirements": ["3+ years community or chapter management", "Fluency in English + one regional language", "Comfortable with regular travel"]
+  },
+  {
+    "id": "job-03",
+    "title": "Editorial Lead, Publications",
+    "company": "Meridian Technology Society",
+    "location": "Remote (Global)",
+    "type": "Full-time",
+    "department": "Publications",
+    "postedDate": "2026-06-10",
+    "description": "Own editorial quality and reviewer operations across the journal, transactions, and magazine portfolio.",
+    "requirements": ["Editorial or peer-review operations background", "Technical publishing experience", "Strong stakeholder communication"]
+  },
+  {
+    "id": "job-04",
+    "title": "Learning Experience Designer",
+    "company": "Meridian Technology Society",
+    "location": "Remote (Global)",
+    "type": "Contract",
+    "department": "Learning & Certification",
+    "postedDate": "2026-05-28",
+    "description": "Design self-paced course experiences for the Learning Hub, partnering with subject-matter-expert instructors.",
+    "requirements": ["Instructional design portfolio", "Experience with adult learning theory", "Comfortable working with technical SMEs"]
+  },
+  {
+    "id": "job-05",
+    "title": "Events Operations Coordinator",
+    "company": "Meridian Technology Society",
+    "location": "Toronto, CA (On-site)",
+    "type": "Full-time",
+    "department": "Events",
+    "postedDate": "2026-05-14",
+    "description": "Coordinate logistics for the flagship symposium and 40+ regional events per year.",
+    "requirements": ["2+ years event operations", "Vendor and venue negotiation experience", "Detail-obsessed project management"]
+  }
+]

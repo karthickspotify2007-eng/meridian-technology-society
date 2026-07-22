@@ -1,0 +1,9 @@
+/* ==========================================================================
+   Meridian — Standalone badge/tag helpers (extends card.css badge-m base)
+   ========================================================================== */
+
+.tag-row { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.status-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 0.35rem; }
+.status-dot.is-live { background: var(--m-gold-500); box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.25); }
+.status-dot.is-upcoming { background: var(--m-amber-500); }
+.status-dot.is-closed { background: var(--m-ink-400); }

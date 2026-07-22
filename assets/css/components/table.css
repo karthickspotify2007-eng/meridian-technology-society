@@ -1,0 +1,22 @@
+/* ==========================================================================
+   Meridian — Data tables (Admin CMS, comparison tables)
+   ========================================================================== */
+
+.table-m-wrap { overflow-x: auto; border: 1px solid var(--m-border); border-radius: var(--m-radius-md); background: var(--m-surface); }
+.table-m { width: 100%; border-collapse: collapse; font-size: var(--m-fs-sm); min-width: 640px; }
+.table-m th, .table-m td { padding: 0.85rem 1rem; text-align: left; border-bottom: 1px solid var(--m-border); }
+.table-m th { font-family: var(--m-font-display); font-size: var(--m-fs-xs); text-transform: uppercase; letter-spacing: 0.05em; color: var(--m-text-muted); background: var(--m-bg-alt); position: sticky; top: 0; }
+.table-m tbody tr:hover { background: var(--m-bg-alt); }
+.table-m tbody tr:last-child td { border-bottom: none; }
+.table-m .row-actions { display: flex; gap: 0.4rem; }
+.table-m .row-actions button { width: 30px; height: 30px; border-radius: 50%; border: none; background: var(--m-bg-alt); color: var(--m-text-muted); cursor: pointer; }
+.table-m .row-actions button:hover { background: var(--m-violet-100); color: var(--m-primary); }
+[data-bs-theme='dark'] .table-m .row-actions button:hover { background: rgba(91,95,239,0.2); }
+
+/* Pricing / comparison table (Membership page) */
+.pricing-table-m th, .pricing-table-m td { text-align: center; }
+.pricing-table-m th:first-child, .pricing-table-m td:first-child { text-align: left; }
+.pricing-table-m .fa-check { color: var(--m-teal-600); }
+.pricing-table-m .fa-xmark { color: var(--m-ink-300); }
+.pricing-table-m th.is-featured { color: var(--m-primary); background: var(--m-violet-100); }
+[data-bs-theme='dark'] .pricing-table-m th.is-featured { background: rgba(91,95,239,0.18); }

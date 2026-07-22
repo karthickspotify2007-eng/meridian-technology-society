@@ -1,0 +1,140 @@
+/* ==========================================================================
+   Meridian — Base styles: reset, typography, utilities, accessibility
+   ========================================================================== */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  /* Native CSS smooth scroll for anchor links / scrollIntoView (mega-menu
+     section jumps, "back to top", etc). Safe to use freely — unlike Lenis,
+     this only affects programmatic/anchor-triggered scrolls, never manual
+     wheel or trackpad input, so it can't cause the freeze/slowness issues
+     Lenis did. Respects prefers-reduced-motion via the override below. */
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+body {
+  margin: 0;
+  font-family: var(--m-font-body);
+  font-size: var(--m-fs-base);
+  line-height: 1.65;
+  color: var(--m-text);
+  background: var(--m-bg);
+  transition: background-color var(--m-duration-base) var(--m-ease), color var(--m-duration-base) var(--m-ease);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+img, svg, video, canvas { max-width: 100%; display: block; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--m-font-display);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  margin: 0 0 var(--m-space-sm);
+  color: var(--m-text);
+}
+h1 { font-size: clamp(2.25rem, 4vw + 1rem, var(--m-fs-5xl)); }
+h2 { font-size: clamp(1.75rem, 2.6vw + 1rem, var(--m-fs-3xl)); }
+h3 { font-size: clamp(1.35rem, 1.4vw + 1rem, var(--m-fs-xl)); }
+h4 { font-size: var(--m-fs-lg); }
+p { margin: 0 0 var(--m-space-sm); color: var(--m-text-muted); }
+
+a { color: var(--m-primary); text-decoration: none; transition: color var(--m-duration-fast) var(--m-ease); }
+a:hover { color: var(--m-primary-strong); }
+
+.text-gradient {
+  background: var(--m-gradient-text);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* ---- Layout helpers ---- */
+.container-m {
+  width: 100%;
+  max-width: var(--m-container);
+  margin-inline: auto;
+  padding-inline: var(--m-space-md);
+}
+.section { padding-block: var(--m-space-3xl); }
+.section-head { max-width: 640px; margin-bottom: var(--m-space-xl); }
+.section-head .eyebrow {
+  display: inline-flex; align-items: center; gap: var(--m-space-3xs);
+  font-family: var(--m-font-display); font-size: var(--m-fs-xs); font-weight: 600;
+  letter-spacing: 0.08em; text-transform: uppercase; color: var(--m-primary);
+  margin-bottom: var(--m-space-2xs);
+}
+.section-head .eyebrow::before {
+  content: ''; width: 18px; height: 2px; background: var(--m-gradient-primary); border-radius: 2px;
+}
+
+/* ---- Focus & a11y ---- */
+:focus-visible {
+  outline: none;
+  box-shadow: var(--m-focus-ring);
+  border-radius: var(--m-radius-sm);
+}
+.skip-link {
+  position: fixed; top: -60px; left: var(--m-space-sm); z-index: 2000;
+  background: var(--m-primary); color: #fff; padding: 0.6rem 1.1rem;
+  border-radius: var(--m-radius-sm); font-weight: 600; transition: top var(--m-duration-fast) var(--m-ease);
+}
+.skip-link:focus { top: var(--m-space-sm); color: #fff; }
+.visually-hidden-focusable:not(:focus):not(:focus-within) {
+  position: absolute !important; width: 1px; height: 1px; overflow: hidden;
+  clip: rect(0 0 0 0); white-space: nowrap;
+}
+[data-aos] { pointer-events: auto; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ---- Glass surface primitive ---- */
+.glass {
+  background: var(--m-surface-glass);
+  border: 1px solid var(--m-surface-glass-border);
+  backdrop-filter: blur(10px) saturate(115%);
+  -webkit-backdrop-filter: blur(10px) saturate(115%);
+  border-radius: var(--m-radius-lg);
+}
+
+/* ---- Selection ---- */
+::selection { background: var(--m-violet-400); color: #fff; }
+
+/* ---- Scrollbar (progressive enhancement) ---- */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--m-ink-400); border-radius: var(--m-radius-pill); }
+
+/* ---- Utility spacing (small, purposeful set — not a full utility framework) ---- */
+.mt-space-lg { margin-top: var(--m-space-lg); }
+.mb-space-lg { margin-bottom: var(--m-space-lg); }
+.text-muted-m { color: var(--m-text-muted) !important; }
+
+/* ---- Page loader ---- */
+#page-loader {
+  position: fixed; inset: 0; z-index: 3000; display: flex; align-items: center; justify-content: center;
+  background: var(--m-bg); transition: opacity var(--m-duration-slow) var(--m-ease), visibility var(--m-duration-slow);
+}
+#page-loader.is-hidden { opacity: 0; visibility: hidden; pointer-events: none; }
+#page-loader .loader-mark {
+  width: 46px; height: 46px; border-radius: 50%;
+  border: 3px solid var(--m-border); border-top-color: var(--m-primary);
+  animation: m-spin 0.9s linear infinite;
+}
+@keyframes m-spin { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) {
+  #page-loader { display: none; }
+}

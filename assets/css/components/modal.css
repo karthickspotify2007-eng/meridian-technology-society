@@ -1,0 +1,32 @@
+/* ==========================================================================
+   Meridian — Modal / dialog
+   ========================================================================== */
+
+.m-modal-backdrop {
+  position: fixed; inset: 0; z-index: 1800; background: rgba(5, 7, 12, 0.55);
+  backdrop-filter: blur(2px);
+  display: flex; align-items: flex-start; justify-content: center; overflow-y: auto;
+  padding: min(8vh, 80px) var(--m-space-md) var(--m-space-md);
+  opacity: 0; visibility: hidden; transition: opacity var(--m-duration-base) var(--m-ease), visibility var(--m-duration-base);
+}
+.m-modal-backdrop.is-open { opacity: 1; visibility: visible; }
+
+.m-modal {
+  background: var(--m-surface); border-radius: var(--m-radius-lg); border: 1px solid var(--m-border);
+  box-shadow: var(--m-shadow-lg); width: min(720px, 100%); max-height: 86vh; overflow-y: auto;
+  transform: translateY(16px) scale(0.98); transition: transform var(--m-duration-base) var(--m-ease);
+}
+.m-modal-backdrop.is-open .m-modal { transform: translateY(0) scale(1); }
+
+.m-modal-head { display: flex; justify-content: space-between; align-items: flex-start; gap: var(--m-space-md); padding: var(--m-space-lg) var(--m-space-lg) var(--m-space-sm); position: sticky; top: 0; background: var(--m-surface); z-index: 1; }
+.m-modal-head h2 { margin: 0; font-size: var(--m-fs-xl); }
+.m-modal-close { flex-shrink: 0; width: 36px; height: 36px; border-radius: 50%; border: none; background: var(--m-bg-alt); color: var(--m-text); cursor: pointer; }
+.m-modal-close:hover { background: var(--m-rose-100); color: var(--m-rose-500); }
+.m-modal-body { padding: 0 var(--m-space-lg) var(--m-space-lg); }
+.m-modal-body p { color: var(--m-text-muted); }
+.m-modal-foot { display: flex; gap: 0.6rem; flex-wrap: wrap; padding: var(--m-space-sm) var(--m-space-lg) var(--m-space-lg); border-top: 1px solid var(--m-border); margin-top: var(--m-space-sm); }
+
+@media (max-width: 640px) {
+  .m-modal-backdrop { padding: 0; align-items: flex-end; }
+  .m-modal { width: 100%; max-height: 92vh; border-radius: var(--m-radius-lg) var(--m-radius-lg) 0 0; }
+}

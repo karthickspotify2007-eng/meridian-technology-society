@@ -1,0 +1,36 @@
+/* ==========================================================================
+   Meridian — App sidebar (Dashboard + Admin shells)
+   ========================================================================== */
+
+.app-sidebar {
+  position: sticky; top: var(--m-header-h); height: calc(100vh - var(--m-header-h));
+  border-right: 1px solid var(--m-border); background: var(--m-bg-alt);
+  padding: var(--m-space-lg) var(--m-space-sm); overflow-y: auto;
+}
+.app-sidebar-profile { display: flex; align-items: center; gap: 0.7rem; padding: 0 0.6rem var(--m-space-md); margin-bottom: var(--m-space-md); border-bottom: 1px solid var(--m-border); }
+.app-sidebar-profile .m-avatar { width: 44px; height: 44px; font-size: var(--m-fs-sm); flex-shrink: 0; }
+.app-sidebar-profile strong { display: block; font-size: var(--m-fs-sm); }
+.app-sidebar-profile span { font-size: var(--m-fs-xs); color: var(--m-text-muted); }
+
+.app-sidebar-nav { display: flex; flex-direction: column; gap: 0.15rem; }
+.app-sidebar-nav a {
+  display: flex; align-items: center; gap: 0.7rem; padding: 0.65rem 0.7rem; border-radius: var(--m-radius-sm);
+  color: var(--m-text-muted); font-weight: 600; font-size: var(--m-fs-sm); cursor: pointer;
+}
+.app-sidebar-nav a i { width: 18px; text-align: center; color: var(--m-text-muted); }
+.app-sidebar-nav a:hover { background: var(--m-surface); color: var(--m-text); }
+.app-sidebar-nav a.is-active { background: var(--m-surface); color: var(--m-primary); box-shadow: var(--m-shadow-sm); }
+.app-sidebar-nav a.is-active i { color: var(--m-primary); }
+.app-sidebar-nav .sidebar-group-label { font-size: var(--m-fs-xs); text-transform: uppercase; letter-spacing: 0.06em; color: var(--m-text-muted); padding: 0.9rem 0.7rem 0.3rem; }
+
+.app-topbar { display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--m-space-lg); flex-wrap: wrap; gap: var(--m-space-sm); }
+.app-topbar h1 { margin: 0; }
+
+.app-sidebar-mobile-toggle { display: none; }
+@media (max-width: 900px) {
+  .app-sidebar { position: fixed; left: 0; top: var(--m-header-h); bottom: 0; width: 260px; z-index: 500;
+    transform: translateX(-100%); transition: transform var(--m-duration-base) var(--m-ease); }
+  .app-sidebar.is-open { transform: translateX(0); box-shadow: var(--m-shadow-lg); }
+  .app-sidebar-mobile-toggle { display: inline-flex; }
+  .app-main { padding: var(--m-space-md); }
+}

@@ -1,0 +1,58 @@
+/* ==========================================================================
+   Meridian — Footer
+   ========================================================================== */
+
+.m-footer {
+  background: var(--m-bg-alt);
+  border-top: 1px solid var(--m-border);
+  padding-block: var(--m-space-2xl) var(--m-space-lg);
+  margin-top: var(--m-space-3xl);
+}
+.m-footer-top {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr 1.2fr;
+  gap: var(--m-space-lg);
+  padding-bottom: var(--m-space-xl);
+}
+.m-footer-brand .m-brand { margin-bottom: var(--m-space-sm); }
+.m-footer-tagline { max-width: 280px; font-size: var(--m-fs-sm); }
+.m-social-row { display: flex; gap: 0.5rem; }
+.m-social-row a {
+  width: 36px; height: 36px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center;
+  background: var(--m-surface); border: 1px solid var(--m-border); color: var(--m-text);
+}
+.m-social-row a:hover { color: #fff; background: var(--m-gradient-primary); border-color: transparent; }
+
+.m-footer-col h3 { font-size: var(--m-fs-sm); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: var(--m-space-sm); }
+.m-footer-col { display: flex; flex-direction: column; gap: 0.55rem; }
+.m-footer-col a { color: var(--m-text-muted); font-size: var(--m-fs-sm); }
+.m-footer-col a:hover { color: var(--m-primary); }
+
+.m-inline-form { display: flex; gap: 0.4rem; margin-top: var(--m-space-xs); }
+.m-inline-form input {
+  flex: 1; min-width: 0; padding: 0.55rem 0.8rem; border-radius: var(--m-radius-sm); border: 1px solid var(--m-border);
+  background: var(--m-surface); color: var(--m-text); font-size: var(--m-fs-sm);
+}
+.m-inline-form input:focus { outline: none; box-shadow: var(--m-focus-ring); }
+
+.m-footer-bottom {
+  display: flex; flex-wrap: wrap; justify-content: space-between; gap: var(--m-space-sm);
+  padding-top: var(--m-space-lg); border-top: 1px solid var(--m-border);
+  font-size: var(--m-fs-xs); color: var(--m-text-muted);
+}
+.m-footer-legal { display: flex; gap: var(--m-space-md); align-items: center; flex-wrap: wrap; }
+.m-footer-legal a { color: var(--m-text-muted); }
+.m-footer-legal a:hover { color: var(--m-primary); }
+
+@media (max-width: 992px) {
+  .m-footer-top { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 560px) {
+  .m-footer-top { grid-template-columns: 1fr; }
+}
+
+/* ---- Toast region (lives right after footer in the DOM) ---- */
+.m-toast-region {
+  position: fixed; bottom: var(--m-space-md); right: var(--m-space-md); z-index: 2500;
+  display: flex; flex-direction: column; gap: 0.5rem; width: min(360px, calc(100vw - 2 * var(--m-space-md)));
+}

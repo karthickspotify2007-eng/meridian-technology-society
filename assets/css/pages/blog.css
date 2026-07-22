@@ -1,0 +1,20 @@
+/* ==========================================================================
+   Meridian — Blog listing + single post
+   ========================================================================== */
+
+.post-meta-row { display: flex; align-items: center; gap: 0.8rem; margin-bottom: var(--m-space-lg); flex-wrap: wrap; }
+.post-meta-row .m-avatar { width: 44px; height: 44px; }
+.post-body { max-width: 720px; margin-inline: auto; font-size: var(--m-fs-md); line-height: 1.8; }
+.post-body p { color: var(--m-text); margin-bottom: var(--m-space-md); }
+.post-share-row { display: flex; gap: 0.6rem; margin: var(--m-space-xl) 0; flex-wrap: wrap; }
+
+.comment-list { display: flex; flex-direction: column; gap: var(--m-space-md); margin: var(--m-space-md) 0 var(--m-space-lg); }
+.comment-item { display: flex; gap: 0.8rem; }
+.comment-avatar {
+  width: 38px; height: 38px; border-radius: 50%; background: var(--m-gradient-primary); color: #fff;
+  display: inline-flex; align-items: center; justify-content: center; font-weight: 700; font-size: var(--m-fs-xs); flex-shrink: 0;
+}
+.comment-item p { margin: 0.3rem 0 0; color: var(--m-text-muted); }
+
+.related-posts-row { display: grid; gap: var(--m-space-lg); grid-template-columns: repeat(3, 1fr); margin-top: var(--m-space-xl); }
+@media (max-width: 768px) { .related-posts-row { grid-template-columns: 1fr; } }

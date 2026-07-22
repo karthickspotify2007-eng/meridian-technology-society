@@ -1,0 +1,15 @@
+/* ==========================================================================
+   Meridian — Certifications page (verify-a-cert tool)
+   ========================================================================== */
+
+.verify-card { max-width: 640px; margin-inline: auto; text-align: center; }
+.verify-card .form-m-group { text-align: left; }
+.verify-result {
+  margin-top: var(--m-space-md); padding: 0.9rem 1.1rem; border-radius: var(--m-radius-md); font-size: var(--m-fs-sm);
+  display: flex; align-items: flex-start; gap: 0.6rem; text-align: left;
+}
+.verify-result.is-valid { background: var(--m-blue-100); color: var(--m-blue-900); }
+[data-bs-theme='dark'] .verify-result.is-valid { background: rgba(96, 165, 250, 0.15); color: var(--m-blue-300); }
+.verify-result.is-invalid { background: var(--m-rose-100); color: #a91f45; }
+[data-bs-theme='dark'] .verify-result.is-invalid { background: rgba(225, 29, 72, 0.18); color: #ff8fa8; }
+.verify-result code { background: rgba(0,0,0,0.08); padding: 0.1rem 0.35rem; border-radius: 4px; }

@@ -1,0 +1,42 @@
+[
+  {
+    "id": "notif-01",
+    "title": "Your certification exam is scheduled",
+    "message": "MCP-AIS exam confirmed for August 14, 2026 at 10:00 UTC. A prep checklist has been added to your dashboard.",
+    "date": "2026-07-18",
+    "type": "certification",
+    "read": false
+  },
+  {
+    "id": "notif-02",
+    "title": "New comment on your saved article",
+    "message": "Someone replied to a thread on \"Reading a Flame Graph Under Pressure\" — the article you bookmarked last week.",
+    "date": "2026-07-16",
+    "type": "community",
+    "read": false
+  },
+  {
+    "id": "notif-03",
+    "title": "Early-bird registration ends soon",
+    "message": "MSEC 2026 early-bird pricing ends July 31. Register now to lock in member rates.",
+    "date": "2026-07-14",
+    "type": "conference",
+    "read": false
+  },
+  {
+    "id": "notif-04",
+    "title": "Course completed: Foundations of Distributed Systems",
+    "message": "Your certificate of completion is ready to download from Dashboard → Certificates.",
+    "date": "2026-07-05",
+    "type": "learning",
+    "read": true
+  },
+  {
+    "id": "notif-05",
+    "title": "Membership renewal reminder",
+    "message": "Your Professional membership renews on 2026-09-01. Update your payment preferences any time in Settings.",
+    "date": "2026-06-28",
+    "type": "membership",
+    "read": true
+  }
+]

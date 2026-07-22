@@ -1,0 +1,41 @@
+/* ==========================================================================
+   Meridian — Buttons
+   ========================================================================== */
+
+.btn-m {
+  display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
+  font-family: var(--m-font-body); font-weight: 600; font-size: var(--m-fs-sm);
+  padding: 0.65rem 1.3rem; border-radius: var(--m-radius-pill); border: 1px solid transparent;
+  cursor: pointer; text-decoration: none; white-space: nowrap;
+  transition: transform var(--m-duration-fast) var(--m-ease), box-shadow var(--m-duration-fast) var(--m-ease),
+              background-color var(--m-duration-fast) var(--m-ease), color var(--m-duration-fast) var(--m-ease),
+              border-color var(--m-duration-fast) var(--m-ease);
+}
+.btn-m:active { transform: scale(0.97); }
+.btn-m:disabled { opacity: 0.55; cursor: not-allowed; }
+
+.btn-m-primary { background: var(--m-gradient-primary); color: #fff; box-shadow: var(--m-shadow-sm); }
+.btn-m-primary:hover { box-shadow: var(--m-shadow-glow); color: #fff; }
+
+.btn-m-secondary { background: var(--m-surface); color: var(--m-text); border-color: var(--m-border); }
+.btn-m-secondary:hover { border-color: var(--m-primary); color: var(--m-primary); }
+
+.btn-m-ghost { background: transparent; color: var(--m-text); border-color: var(--m-border); }
+.btn-m-ghost:hover { background: var(--m-bg-alt); color: var(--m-primary); }
+
+.btn-m-outline-invert { background: transparent; color: #fff; border-color: rgba(255,255,255,0.4); }
+.btn-m-outline-invert:hover { background: rgba(255,255,255,0.12); color: #fff; }
+
+.btn-m-sm { padding: 0.42rem 0.9rem; font-size: var(--m-fs-xs); }
+.btn-m-lg { padding: 0.85rem 1.7rem; font-size: var(--m-fs-base); }
+.btn-m-block { width: 100%; }
+.btn-m-icon { width: 42px; height: 42px; padding: 0; border-radius: 50%; }
+
+.chip-m {
+  display: inline-flex; align-items: center; gap: 0.35rem; padding: 0.4rem 0.85rem;
+  border-radius: var(--m-radius-pill); border: 1px solid var(--m-border); background: var(--m-surface);
+  font-size: var(--m-fs-xs); font-weight: 600; color: var(--m-text-muted); cursor: pointer;
+  transition: all var(--m-duration-fast) var(--m-ease);
+}
+.chip-m:hover { border-color: var(--m-primary); color: var(--m-primary); }
+.chip-m.is-active { background: var(--m-gradient-primary); border-color: transparent; color: #fff; }

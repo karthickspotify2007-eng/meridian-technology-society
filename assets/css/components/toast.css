@@ -1,0 +1,20 @@
+/* ==========================================================================
+   Meridian — Toast notifications
+   ========================================================================== */
+
+.toast-m {
+  display: flex; align-items: flex-start; gap: 0.65rem; padding: 0.9rem 1rem;
+  background: var(--m-surface); border: 1px solid var(--m-border); border-radius: var(--m-radius-md);
+  box-shadow: var(--m-shadow-lg); animation: toast-in var(--m-duration-base) var(--m-ease);
+}
+.toast-m.is-leaving { animation: toast-out var(--m-duration-base) var(--m-ease) forwards; }
+.toast-m i.toast-icon { margin-top: 0.15rem; }
+.toast-m.toast-success i.toast-icon { color: var(--m-teal-600); }
+.toast-m.toast-error i.toast-icon { color: var(--m-rose-500); }
+.toast-m.toast-info i.toast-icon { color: var(--m-primary); }
+.toast-m-body { flex: 1; font-size: var(--m-fs-sm); }
+.toast-m-body strong { display: block; margin-bottom: 0.1rem; }
+.toast-m-close { background: none; border: none; color: var(--m-text-muted); cursor: pointer; }
+
+@keyframes toast-in { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes toast-out { to { opacity: 0; transform: translateX(24px); } }

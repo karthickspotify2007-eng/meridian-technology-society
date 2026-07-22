@@ -1,0 +1,37 @@
+/* ==========================================================================
+   Meridian — Auth pages (Login / Register / Forgot password)
+   ========================================================================== */
+
+.auth-shell {
+  min-height: 100vh; padding-top: var(--m-header-h);
+  display: grid; grid-template-columns: 1fr 1fr; align-items: stretch;
+}
+.auth-visual {
+  position: relative; overflow: hidden; display: flex; flex-direction: column; justify-content: center;
+  padding: var(--m-space-2xl); background: linear-gradient(160deg, var(--m-ink-900), var(--m-violet-700) 140%); color: #fff;
+}
+.auth-visual::before { content: ''; position: absolute; inset: 0; background: var(--m-gradient-mesh); opacity: 0.7; }
+.auth-visual * { position: relative; z-index: 1; }
+.auth-visual h2 { color: #fff; max-width: 420px; }
+.auth-visual p { color: rgba(255,255,255,0.75); max-width: 420px; }
+.auth-visual .stat-row { margin-top: var(--m-space-xl); text-align: left; grid-template-columns: repeat(3, auto); gap: var(--m-space-xl); justify-content: flex-start; }
+.auth-visual .stat-number { background: none; -webkit-text-fill-color: unset; color: #fff; font-size: var(--m-fs-2xl); }
+.auth-visual .stat-label { color: rgba(255,255,255,0.65); }
+
+.auth-form-panel { display: flex; align-items: center; justify-content: center; padding: var(--m-space-2xl) var(--m-space-lg); }
+.auth-form-card { width: 100%; max-width: 420px; }
+.auth-form-card h1 { font-size: var(--m-fs-2xl); }
+.auth-form-card .subtitle { margin-bottom: var(--m-space-lg); }
+.auth-divider { display: flex; align-items: center; gap: 0.8rem; margin: var(--m-space-lg) 0; color: var(--m-text-muted); font-size: var(--m-fs-xs); }
+.auth-divider::before, .auth-divider::after { content: ''; flex: 1; height: 1px; background: var(--m-border); }
+.auth-demo-hint {
+  background: var(--m-bg-alt); border: 1px solid var(--m-border); border-radius: var(--m-radius-md);
+  padding: 0.8rem 1rem; font-size: var(--m-fs-xs); color: var(--m-text-muted); margin-bottom: var(--m-space-lg);
+}
+.auth-demo-hint code { background: var(--m-surface); padding: 0.1rem 0.4rem; border-radius: 4px; }
+.auth-footer-link { text-align: center; margin-top: var(--m-space-lg); font-size: var(--m-fs-sm); color: var(--m-text-muted); }
+
+@media (max-width: 900px) {
+  .auth-shell { grid-template-columns: 1fr; }
+  .auth-visual { display: none; }
+}

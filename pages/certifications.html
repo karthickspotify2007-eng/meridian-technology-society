@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){var t=localStorage.getItem('meridian:theme:v2')||'light';document.documentElement.setAttribute('data-bs-theme',t);})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Certifications | Meridian Technology Society</title>
+<meta name="description" content="Vendor-neutral professional certifications in AI safety, security, site reliability, accessibility, and sustainable systems.">
+<link rel="canonical" href="/pages/certifications.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Meridian Certifications">
+<meta property="og:description" content="Vendor-neutral certifications built by working practitioners.">
+<meta property="og:url" content="/pages/certifications.html">
+<meta name="theme-color" content="#F8FAFC">
+<link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg?v=8">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+
+<link rel="stylesheet" href="/assets/css/variables.css?v=8">
+<link rel="stylesheet" href="/assets/css/base.css?v=8">
+<link rel="stylesheet" href="/assets/css/layout.css?v=8">
+<link rel="stylesheet" href="/assets/css/components/navbar.css?v=8">
+<link rel="stylesheet" href="/assets/css/components/footer.css?v=8">
+<link rel="stylesheet" href="/assets/css/components/button.css?v=8">
+<link rel="stylesheet" href="/assets/css/components/card.css?v=8">
+<link rel="stylesheet" href="/assets/css/components/badge.css?v=8">
+<link rel="stylesheet" href="/assets/css/components/modal.css?v=8">
+<link rel="stylesheet" href="/assets/css/components/form.css?v=8">
+<link rel="stylesheet" href="/assets/css/components/toast.css?v=8">
+<link rel="stylesheet" href="/assets/css/components/search.css?v=8">
+<link rel="stylesheet" href="/assets/css/pages/listing.css?v=8">
+<link rel="stylesheet" href="/assets/css/pages/certifications.css?v=8">
+</head>
+<body>
+<div id="page-loader"><div class="loader-mark" aria-hidden="true"></div></div>
+<div data-partial="header"></div>
+
+<main id="main-content">
+  <section class="page-banner">
+    <div class="container-m">
+      <nav class="breadcrumb-m" aria-label="Breadcrumb">
+        <a href="/index.html">Home</a><span class="sep">/</span><span aria-current="page">Certifications</span>
+      </nav>
+      <h1>Certifications</h1>
+      <p class="lead">Vendor-neutral, practitioner-built certifications that test judgment under ambiguity, not just recall.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container-m">
+      <div class="listing-toolbar">
+        <div class="listing-search">
+          <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+          <input type="text" id="certifications-search" placeholder="Search certifications...">
+        </div>
+        <div class="listing-selects">
+          <select id="filter-domain" aria-label="Filter by domain"><option value="all">All domains</option></select>
+        </div>
+      </div>
+      <p class="listing-results-count" id="certifications-count"></p>
+      <div class="grid-3" id="certifications-grid"></div>
+      <div class="pagination-m" id="certifications-pagination"></div>
+    </div>
+  </section>
+
+  <section class="section" id="verify" style="background:var(--m-bg-alt);">
+    <div class="container-m">
+      <div class="card-m verify-card" data-aos="fade-up">
+        <span class="card-m-icon" style="align-self:center;"><i class="fa-solid fa-magnifying-glass-plus" aria-hidden="true"></i></span>
+        <h2 style="margin-top:0.6rem;">Verify a certificate</h2>
+        <p class="card-m-desc">Enter a credential ID to confirm it was issued by Meridian and is currently valid.</p>
+        <form id="verify-cert-form" novalidate>
+          <div class="form-m-group">
+            <label for="verify-cert-input" class="visually-hidden-focusable">Credential ID</label>
+            <input type="text" id="verify-cert-input" placeholder="e.g. MCP-AIS-2026-00142" required>
+          </div>
+          <button type="submit" class="btn-m btn-m-primary">Verify credential</button>
+        </form>
+        <div class="verify-result" id="verify-cert-result" hidden></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div data-partial="footer"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" defer></script>
+
+<script src="/assets/js/core/partials.js?v=8" defer></script>
+<script src="/assets/js/core/theme.js?v=8" defer></script>
+<script src="/assets/js/core/data.js?v=8" defer></script>
+<script src="/assets/js/core/state.js?v=8" defer></script>
+<script src="/assets/js/core/a11y.js?v=8" defer></script>
+<script src="/assets/js/core/auth.js?v=8" defer></script>
+
+<script src="/assets/js/components/Navbar.js?v=8" defer></script>
+<script src="/assets/js/components/Toast.js?v=8" defer></script>
+<script src="/assets/js/components/Modal.js?v=8" defer></script>
+<script src="/assets/js/components/Counter.js?v=8" defer></script>
+<script src="/assets/js/components/Tilt.js?v=8" defer></script>
+<script src="/assets/js/components/Bookmark.js?v=8" defer></script>
+<script src="/assets/js/components/Notifications.js?v=8" defer></script>
+<script src="/assets/js/components/ShareButton.js?v=8" defer></script>
+<script src="/assets/js/components/SearchModal.js?v=8" defer></script>
+<script src="/assets/js/components/Card.js?v=8" defer></script>
+<script src="/assets/js/components/DetailModal.js?v=8" defer></script>
+<script src="/assets/js/components/Filters.js?v=8" defer></script>
+<script src="/assets/js/components/Pagination.js?v=8" defer></script>
+
+<script src="/assets/js/lib-init/gsap-init.js?v=8" defer></script>
+<script src="/assets/js/lib-init/lenis-init.js?v=8" defer></script>
+<script src="/assets/js/lib-init/aos-init.js?v=8" defer></script>
+
+<script src="/assets/js/pages/certifications.js?v=8" defer></script>
+</body>
+</html>

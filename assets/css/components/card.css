@@ -1,0 +1,58 @@
+/* ==========================================================================
+   Meridian — Cards
+   ========================================================================== */
+
+.card-m {
+  background: var(--m-surface);
+  border: 1px solid var(--m-border);
+  border-radius: var(--m-radius-lg);
+  padding: var(--m-space-md);
+  display: flex; flex-direction: column; gap: 0.6rem;
+  height: 100%;
+  transition: transform var(--m-duration-base) var(--m-ease), box-shadow var(--m-duration-base) var(--m-ease), border-color var(--m-duration-base) var(--m-ease);
+  will-change: transform;
+}
+.card-m:hover { box-shadow: var(--m-shadow-md); border-color: rgba(30, 58, 138, 0.32); }
+[data-bs-theme='dark'] .card-m:hover { border-color: rgba(96, 165, 250, 0.4); }
+
+.card-m-icon {
+  width: 46px; height: 46px; border-radius: var(--m-radius-md);
+  display: inline-flex; align-items: center; justify-content: center;
+  background: var(--m-blue-100); color: var(--m-primary); font-size: 1.15rem;
+}
+[data-bs-theme='dark'] .card-m-icon { background: rgba(96, 165, 250, 0.18); }
+
+.card-m-title { font-family: var(--m-font-display); font-size: var(--m-fs-md); font-weight: 700; margin: 0; }
+.card-m-desc { font-size: var(--m-fs-sm); color: var(--m-text-muted); margin: 0; flex: 1; }
+.card-m-meta { display: flex; flex-wrap: wrap; gap: 0.4rem; align-items: center; font-size: var(--m-fs-xs); color: var(--m-text-muted); }
+.card-m-footer { display: flex; justify-content: space-between; align-items: center; margin-top: auto; padding-top: 0.4rem; border-top: 1px solid var(--m-border); }
+
+.card-m-bookmark {
+  border: none; background: none; color: var(--m-text-muted); cursor: pointer; font-size: 1rem; padding: 0.2rem;
+  transition: color var(--m-duration-fast) var(--m-ease), transform var(--m-duration-fast) var(--m-ease);
+}
+.card-m-bookmark:hover { color: var(--m-rose-500); transform: scale(1.12); }
+.card-m-bookmark.is-saved { color: var(--m-rose-500); }
+.card-m-bookmark.is-saved i { font-weight: 900; }
+
+.badge-m {
+  display: inline-flex; align-items: center; gap: 0.3rem; padding: 0.25rem 0.65rem;
+  border-radius: var(--m-radius-pill); font-size: var(--m-fs-xs); font-weight: 700;
+  background: var(--m-blue-100); color: var(--m-blue-900);
+}
+[data-bs-theme='dark'] .badge-m { background: rgba(96, 165, 250, 0.18); color: var(--m-blue-300); }
+/* "Teal" badge is now a neutral slate tag (no teal in the brand palette) — used for secondary/topic tags. */
+.badge-m-teal { background: var(--m-ink-100); color: var(--m-ink-700); }
+[data-bs-theme='dark'] .badge-m-teal { background: rgba(148, 163, 184, 0.16); color: var(--m-ink-300); }
+.badge-m-amber { background: var(--m-gold-100); color: #8a5a04; }
+[data-bs-theme='dark'] .badge-m-amber { background: rgba(251, 191, 36, 0.18); color: var(--m-gold-400); }
+.badge-m-rose { background: var(--m-rose-100); color: #a91f45; }
+[data-bs-theme='dark'] .badge-m-rose { background: rgba(225, 29, 72, 0.18); color: #ff8fa8; }
+
+/* Feature card used on Home (About / Membership benefit tiles) */
+.feature-card { text-align: left; }
+.feature-card .card-m-icon { margin-bottom: 0.2rem; }
+
+/* Empty state */
+.empty-state { text-align: center; padding: var(--m-space-2xl) var(--m-space-md); color: var(--m-text-muted); }
+.empty-state svg { margin-inline: auto; margin-bottom: var(--m-space-sm); color: var(--m-primary); opacity: 0.6; }
